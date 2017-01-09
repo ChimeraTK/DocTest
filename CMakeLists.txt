@@ -4,6 +4,6 @@ Project(DocTest)
 
 
   add_custom_target(doc
-    arrgh broken command
+    mkdir -p doc/html && cp ${PROJECT_SOURCE_DIR}/doc/index.html doc/html
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
     )
